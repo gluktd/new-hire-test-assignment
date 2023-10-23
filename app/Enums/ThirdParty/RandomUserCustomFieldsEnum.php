@@ -1,7 +1,12 @@
 <?php
 
 namespace App\Enums\ThirdParty;
-enum RandomUserCustomFieldsEnum: string {
+
+use LaracraftTech\LaravelUsefulAdditions\Traits\UsefulEnums;
+
+enum RandomUserCustomFieldsEnum: string
+{
+    use UsefulEnums;
     case FullName = "full_name";
     case County = "country";
 }

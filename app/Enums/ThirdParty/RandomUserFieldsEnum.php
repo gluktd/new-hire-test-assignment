@@ -2,8 +2,11 @@
 
 namespace App\Enums\ThirdParty;
 
+use LaracraftTech\LaravelUsefulAdditions\Traits\UsefulEnums;
+
 enum RandomUserFieldsEnum: string
 {
+    use UsefulEnums;
     case Gender = "gender";
     case Email = "email";
     case Login = "login";
