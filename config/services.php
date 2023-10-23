@@ -31,4 +31,8 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    'randomuser' => [
+        'url' => env('RANDOM_USER_ENDPOINT','https://randomuser.me/api/'),
+    ],
+
 ];
